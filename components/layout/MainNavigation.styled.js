@@ -25,7 +25,7 @@ export const NavLogo = styled.div`
   color: #45bc8f;
   line-height: 1;
   margin: 0.5em;
-  padding: .25em .5em;
+  padding: .30em .30em;
   font-size: 2.25em;
 `;
 
@@ -56,7 +56,7 @@ export const NavLinks = styled(LinkS)`
   font-weight: 500;
 
   /* &:hover {
-    color: ${c_yan};
+    color: 
     transition: 0.3s ease-out;
   } */
 `;
