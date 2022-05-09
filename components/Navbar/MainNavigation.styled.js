@@ -40,7 +40,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  padding: 10px
+  padding: 10px;
 `;
 
 
