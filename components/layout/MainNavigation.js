@@ -13,7 +13,7 @@ function MainNavigation() {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo>PEACEKEAPERS</NavLogo>
+          <NavLogo>PeaceKeepers</NavLogo>
           <NavMenu>
             <NavItem>
               <NavLinks>Home</NavLinks>

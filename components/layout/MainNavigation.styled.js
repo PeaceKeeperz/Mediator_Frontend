@@ -14,7 +14,7 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-around;
   width: 100%;
-  max-width: 80em;
+  max-width: 90em;
   align-items: center;
   margin: 0 auto;
 `;
@@ -25,8 +25,8 @@ export const NavLogo = styled.div`
   color: #45bc8f;
   line-height: 1;
   margin: 0.5em;
-  padding: .5em 1em;
-  font-size: 1.45em;
+  padding: .25em .5em;
+  font-size: 2.25em;
 `;
 
 
@@ -36,10 +36,11 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   margin: 0 auto;
+  padding-right: 40px;
 `;
 
 export const NavItem = styled.li`
-  
+  padding: 10px
 `;
 
 
