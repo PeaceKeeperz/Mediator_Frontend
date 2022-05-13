@@ -8,19 +8,12 @@ import {
     Paragraph,
   Button,
 } from '../HeroSection/Hero.styled';
-import Image from 'next/image';
+
 import bg from '../../images/hero.png';
 function Hero() {
   return (
     <HeroContainer>
-      <BackgroundContainer>
-        <Image
-          src={bg}
-          alt='background picture'
-          layout='responsive'
-          quality={100}
-        />
-      </BackgroundContainer>
+     
       <ContentContainer>
         <GridContainer>
           <ContentWrapper>

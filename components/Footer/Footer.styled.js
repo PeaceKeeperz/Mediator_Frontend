@@ -1,7 +1,8 @@
 import styled from 'styled-components';
-
+import bg from '../../images/mosaic.png';
 export const FooterContainer = styled.footer`
   background: #000;
+  background-image: url(${bg.src});
   padding: 40px;
   text-align: center;
   width: 100%;
@@ -16,7 +17,17 @@ export const FooterWrapper = styled.div`
   margin: 0 auto;
  `;
 
-export const CopywriteContainer = styled.div``;
+export const CopywriteContainer = styled.div`
+display: flex;
+font-family: 'Macondo';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+align-items: center;
+gap: 6px;
+
+`;
 
 
 export const LinkWrapper = styled.div`
