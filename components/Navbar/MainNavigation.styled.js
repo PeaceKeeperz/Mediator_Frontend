@@ -43,11 +43,11 @@ export const NavMenu = styled.ul`
 
 export const NavItem = styled.li`
   padding: 10px;
-  &:hover {
+  /* &:hover {
     background: #45bc8f;
     color: white;
     transition: 0.3s ease-out;
-  }
+  } */
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -55,16 +55,18 @@ export const NavLinks = styled(LinkS)`
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
+  padding: 10px;
   margin: 0 0.5em;
   height: 100%;
   cursor: pointer;
   font-weight: 700;
 
-  /* &:hover {
-    color: 
+  &:hover {
+    background: #45bc8f;
+    color: white;
     transition: 0.3s ease-out;
-  } */
+  }
 `;
 
 export const Button = styled.button`

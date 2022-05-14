@@ -15,7 +15,7 @@ export default function Process() {
     return <Card title={card.title} img={card.image} text={card.text} />;
   });
   return (
-    <ProcessContainer>
+    <ProcessContainer id='process'>
       <ImageContainer>
         <Image src={line} />
       </ImageContainer>
