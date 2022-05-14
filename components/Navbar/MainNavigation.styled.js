@@ -8,6 +8,9 @@ export const Nav = styled.nav`
   align-items: center;
   background-color: black;
   background: radial-gradient(transparent, black), gray;
+  position: sticky;
+  z-index: 10;
+  top: 0;
 `;
 
 export const NavbarContainer = styled.div`
@@ -17,6 +20,7 @@ export const NavbarContainer = styled.div`
   max-width: 90em;
   align-items: center;
   margin: 0 auto;
+
 `;
 
 export const NavLogo = styled.div`

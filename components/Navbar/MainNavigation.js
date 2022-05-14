@@ -15,7 +15,7 @@ function MainNavigation() {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 192) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
@@ -46,7 +46,8 @@ function MainNavigation() {
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact='true'>
+                exact='true'
+                offset={-192}>
                 About
               </NavLinks>
             </NavItem>
@@ -56,7 +57,8 @@ function MainNavigation() {
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact='true'>
+                exact='true'
+                offset={-192}>
                 When to Use a Mediator
               </NavLinks>
             </NavItem>
@@ -66,7 +68,8 @@ function MainNavigation() {
                 smooth={true}
                 duration={500}
                 spy={true}
-                exact='true'>
+                exact='true'
+                offset={-192}>
                 Mediation Process
               </NavLinks>
             </NavItem>
