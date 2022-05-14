@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
@@ -25,13 +25,12 @@ export const NavLogo = styled.div`
   color: #45bc8f;
   line-height: 1;
   margin: 0.5em;
-  padding: .30em .30em;
+  padding: 0.3em 0.3em;
   font-size: 2.25em;
   &:hover {
-   cursor: pointer;
+    cursor: pointer;
   }
 `;
-
 
 export const NavMenu = styled.ul`
   display: flex;
@@ -51,7 +50,6 @@ export const NavItem = styled.li`
   }
 `;
 
-
 export const NavLinks = styled(LinkS)`
   color: white;
   display: flex;
@@ -68,7 +66,6 @@ export const NavLinks = styled(LinkS)`
     transition: 0.3s ease-out;
   } */
 `;
-
 
 export const Button = styled.button`
   background: white;

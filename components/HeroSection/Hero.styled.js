@@ -3,10 +3,9 @@ import styled from 'styled-components';
 import bg from '../../images/hero.png';
 
 export const HeroContainer = styled.div`
-
-background-image: url(${bg.src});
-background-size: cover;
-background-repeat: no-repeat;
+  background-image: url(${bg.src});
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   display: flex;
@@ -19,8 +18,6 @@ background-repeat: no-repeat;
 export const BackgroundContainer = styled.div`
   height: 100%;
   width: 100%;
-  
-  
 `;
 
 export const ContentContainer = styled.div`
@@ -30,7 +27,6 @@ export const ContentContainer = styled.div`
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
-  
 `;
 
 export const GridContainer = styled.div`
@@ -41,7 +37,6 @@ export const GridContainer = styled.div`
   grid-template-areas: 'col1'; */
   display: block;
   width: 50%;
-  
 `;
 
 export const ContentWrapper = styled.div`
@@ -72,7 +67,6 @@ export const Paragraph = styled.p`
 `;
 
 export const ButtonContainter = styled.div``;
-
 
 export const Button = styled.button`
   background: #45bc8f;
