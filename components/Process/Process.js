@@ -12,10 +12,10 @@ import line from '../../images/loading-line.png';
 
 export default function Process() {
   const cards = data.map((card) => {
-    return <Card title={card.title} img={card.image} text={card.text} />;
+    return <Card key={card.id} title={card.title} img={card.image} text={card.text} />;
   });
   return (
-    <ProcessContainer id='process'>
+    <ProcessContainer name='process'>
       <ImageContainer>
         <Image src={line} />
       </ImageContainer>
