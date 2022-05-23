@@ -4,7 +4,12 @@ import styled from 'styled-components'
 export const WantContainer = styled.div`
 
 margin-top: 200px;
-
+@media screen and (min-width: 280px) and (max-width: 1080px){
+    width: 400%;
+    zoom: 2;
+    margin-bottom: 1000px;
+    
+  }
 
 
 `;

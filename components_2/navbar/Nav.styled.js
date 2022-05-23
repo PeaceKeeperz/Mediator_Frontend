@@ -128,20 +128,24 @@ export const NavLinks = styled(LinkS)`
 `;
 
 export const Button1 = styled.button`
-  background: white;
+  background: transparent;
   border-radius: 999px;
   box-sizing: border-box;
-  color: black;
+  border: solid  ;
+  border-width: 1px;
+  border-color: #45bc8f;
+  color: #45bc8f;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 24px;
+  letter-spacing: 1px;
   opacity: 1;
   outline: 0 solid transparent;
   padding: 8px 56px;
   width: fit-content;
   word-break: break-word;
-  border: 0;
+  
   margin: 0.25em;
 
   &:hover {

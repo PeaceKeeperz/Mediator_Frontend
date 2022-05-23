@@ -6,7 +6,12 @@ display: flex;
 margin-left: 72px;
 margin-right: 20px;
 gap: 12px;
-
+@media screen and (min-width: 280px) and (max-width: 1080px){
+  
+    width: 400%;
+   margin-top: 120px;
+   zoom: 2;
+  }
 
 `;
 
@@ -43,7 +48,10 @@ text-align: justify;
 
 export const ImageContainer = styled.div`
 
-
+@media screen and (min-width: 280px) and (max-width: 1080px){
+  
+  display: none;
+}
 
 
 `;

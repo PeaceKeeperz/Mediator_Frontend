@@ -7,6 +7,7 @@ export const CardContainer = styled.div`
   background-image: url(${bg.src});
   display: flex;
   flex-direction: column;
+  
 `;
 
 export const ImageContainer = styled.div`

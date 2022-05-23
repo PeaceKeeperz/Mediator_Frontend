@@ -15,7 +15,7 @@ import {
   NavItem,
   NavLinks,
   NavLogo,
-} from './MainNavigation.styled';
+} from './Nav.styled';
 
 function MainNavigation() {
   const [scrollNav, setScrollNav] = useState(false);
@@ -46,12 +46,12 @@ toggleHome()
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <Link href="/">
+        <Link href="/">
           <NavLogo>PeaceKeepers</NavLogo>
           </Link>
-          {navExpanded ? <NavMenu>
+           <NavMenu>
             <NavItem> 
-              <NavLinks onClick= {toggleHome}>Home</NavLinks>
+              <NavLinks onClick= {toggleHome}>My Dashboard</NavLinks>
             </NavItem>
             <NavItem>
               <NavLinks
@@ -61,7 +61,7 @@ toggleHome()
                 spy={true}
                 exact='true'
                 offset={-192}>
-                About
+                Mediation
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -72,68 +72,14 @@ toggleHome()
                 spy={true}
                 exact='true'
                 offset={-192}>
-                When to Use a Mediator
+                Mediator
               </NavLinks>
             </NavItem>
-            <NavItem>
-              <NavLinks
-                to='process'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-192}>
-                Mediation Process
-              </NavLinks>
-            </NavItem>
-          </NavMenu> : 
-          <NavMenu2>
-
-          <NavItem> 
-              <NavLinks onClick={ ( )=> { setNavExpanded(!navExpanded); toggleHome}}>Home</NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-              onClick={()=> setNavExpanded(!navExpanded) }
-                to='about'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-192}>
-                About
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-              onClick={()=> setNavExpanded(!navExpanded) }
-                to='when'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-192}>
-                When to Use a Mediator
-              </NavLinks>
-            </NavItem>
-            <NavItem>
-              <NavLinks
-              onClick={()=> setNavExpanded(!navExpanded) }
-                to='process'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-192}>
-                Mediation Process
-              </NavLinks>
-            </NavItem>
-
-
-
-          </NavMenu2>}
+            
+          </NavMenu> 
+          
           <Link href="/Mediation_app">
-          <Button1>Launch App</Button1>
+          <Button1>Connect Wallet</Button1>
           </Link>
           <Button2 onClick={()=> setNavExpanded(!navExpanded)}>  <FiMenu size={40} /> </Button2>
           <Button3 onClick={()=> setNavExpanded(!navExpanded)}>  <AiOutlineClose size={40} /> </Button3>

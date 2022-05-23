@@ -5,15 +5,38 @@ import Hero from '../components/HeroSection/Hero'
 import Process from '../components/Process/Process'
 import Want from '../components/Want/Want'
 import When from '../components/When/When'
+import Layout from '../components/layout/Layout';
+
 
 export default function Home() {
   return (
-    <div>
+    
+      <Layout>
       <Hero/>
        <About/>
        <When/>
        <Process/>
        <Want/>
-      </div>
+       </Layout>
+      
   )
 }
+
+
+
+/* import '../styles/globals.css'
+import Layout from '../components/layout/Layout';
+ 
+function MyApp({ Component, pageProps }) {
+
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
+}
+
+export default MyApp
+
+
+*/

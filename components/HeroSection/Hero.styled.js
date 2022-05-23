@@ -13,6 +13,15 @@ export const HeroContainer = styled.div`
   height: 600px;
   position: relative;
   z-index: 1;
+
+  @media screen and (min-width: 280px) and (max-width: 1080px){
+    
+    width: 400%;
+   margin-top: 120px;
+   zoom: 2;
+    
+  }
+
 `;
 
 export const BackgroundContainer = styled.div`
@@ -27,6 +36,12 @@ export const ContentContainer = styled.div`
   /* display: flex; */
   /* flex-direction: column; */
   /* align-items: center; */
+  @media screen and (min-width: 280px) and (max-width: 1080px){
+    
+   
+    
+    
+  }
 `;
 
 export const GridContainer = styled.div`
@@ -91,3 +106,6 @@ export const Button = styled.button`
     transition: 0.3s ease-out;
   }
 `;
+
+
+

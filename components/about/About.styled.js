@@ -10,12 +10,24 @@ height: 884px;
 margin-top: 10px;
 padding: 20px;
 margin-left:-30px;
-
+@media screen and (min-width: 280px) and (max-width: 1080px){
+ 
+    width: 400%;
+    
+   
+    zoom: 2;
+    
+  }
 `;
 
 
 export const InlineContainer = styled.div`
 display: flex;
+@media screen and (min-width: 280px) and (max-width: 1080px){
+    display: grid;
+    
+    
+  }
 `;
 
 export const ParagraphContainer = styled.div`
@@ -51,7 +63,10 @@ margin-left: 60px;
 
 export const ImageContainer = styled.div`
   margin-left: 68px;
-
+  @media screen and (min-width: 280px) and (max-width: 1080px){
+    display: none;
+    
+  }
 `;
 
 export const Image2 = styled.img`

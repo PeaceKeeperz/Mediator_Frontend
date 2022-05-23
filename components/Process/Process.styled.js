@@ -10,7 +10,14 @@ export const Title = styled.h1`
   margin-bottom: 56px;
 `;
 
-export const ProcessContainer = styled.div``;
+export const ProcessContainer = styled.div`
+@media screen and (min-width: 280px) and (max-width: 1080px){
+    width: 400%;
+    zoom: 2;
+    overflow-x: hidden;
+  }
+
+`;
 
 /*export const CardsContainer = styled.div`
      display: grid;
@@ -27,10 +34,19 @@ export const ThreeCardsContainer = styled.div`
   display: flex;
   gap: 59px;
   margin-left: 13px;
+  @media screen and (min-width: 280px) and (max-width: 1080px){
+    display: grid;
+  }
 `;
 export const TwoCardsContainer = styled.div`
   display: flex;
   gap: 59px;
-  margin-left: 220px;
+  margin-left: 230px;
   margin-top: 81px;
+
+  @media screen and (min-width: 280px) and (max-width: 1080px){
+    display: grid;
+    margin-left: 13px;
+  }
+
 `;
