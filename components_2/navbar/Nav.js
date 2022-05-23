@@ -16,6 +16,7 @@ import {
   NavLinks,
   NavLogo,
 } from './Nav.styled';
+import {ConnectButton} from "web3uikit";
 
 function MainNavigation() {
   const [scrollNav, setScrollNav] = useState(false);
@@ -79,7 +80,8 @@ toggleHome()
           </NavMenu> 
           
           <Link href="/Mediation_app">
-          <Button1>Connect Wallet</Button1>
+          {/* <Button1>Connect Wallet</Button1> */}
+          <ConnectButton />
           </Link>
           <Button2 onClick={()=> setNavExpanded(!navExpanded)}>  <FiMenu size={40} /> </Button2>
           <Button3 onClick={()=> setNavExpanded(!navExpanded)}>  <AiOutlineClose size={40} /> </Button3>
