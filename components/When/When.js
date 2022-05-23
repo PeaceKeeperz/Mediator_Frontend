@@ -11,7 +11,7 @@ import mediator from '../../images/mediator.png';
 
 export default function When() {
   return (
-    <WhenContainer id="when">
+    <WhenContainer name="when">
       <ParagraphContainer>
         <Image src={line} />
         <Title>When to use a mediator?</Title>

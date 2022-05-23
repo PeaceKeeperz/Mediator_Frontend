@@ -15,7 +15,7 @@ import Image from 'next/image';
 import Image2 from 'next/image';
 export default function About() {
   return (
-    <AboutContainer id='about'>
+    <AboutContainer name='about'>
       <InlineContainer>
         <ImageContainer>
           <Image src={imge} width='610px' height='460px' />
