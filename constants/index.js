@@ -1148,4 +1148,4 @@ export const MEDIATION_ABI=[
       "type": "receive"
     }
   ]
-export const MEDIATION_ADDRESS="0x3179a6f565Eaf827aB8DF6aCa48b9c95A71C07D6"
+export const MEDIATION_ADDRESS="0xB780e765f39A18cad0FBDaa989E691615D1716f5"
