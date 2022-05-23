@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 export default function Card(props) {
   return (
-    <CardContainer>
+    <CardContainer >
       <ImageContainer>
         <Image src={props.img} width={98} height={28} />
       </ImageContainer>
