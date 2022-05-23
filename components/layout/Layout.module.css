@@ -1,6 +1,15 @@
 .main {
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   max-width: 90em;
   color: white;
+  height:100%;
+  
+  @media screen and (min-width: 280px) and (max-width: 1080px){
+    
+    overflow-x: hidden;
+    height:100%;
+  }
+
+  
 }

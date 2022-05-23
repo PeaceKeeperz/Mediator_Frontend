@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "Register to Peace Keepers",
+    "image": "/crd1.png",
+    "text": "  If you’re part of a Dao or company, you could register through your employee’s account. If you’re a person, you can do it individually.  Here you’ll have to provide us with your data and your employees or contributors if applicable, such as: name, physical address, ETH address, phone number, etc. "
+  },
+  {
+    "id": 2,
+    "title": "Submitting the case to get approved",
+    "image": "/crd2.png",
+    "text": "  Once a party sign in and connect through their wallet, you’ll get an initial form you’ll have to fill for us to be able to understand your conflict, please be as detailed as possible, so we can understand how we can help, especially we need to know the shared on-chain property and the level of conflict between you. "
+  },
+
+  {
+    "id": 3,
+    "title": "Invite the other party",
+    "image": "/crd3.png",
+    "text": "  We’ll contact you to work out your three preferred dates for your Mediation.We will then issue an invitation to the other party to attend a mediation session. If they agree to attend mediation:We will confirm the mediation date and time.We will email an invoice for upfront payment for Phase 4. "
+  },
+
+  {
+    "id": 4,
+    "title": "Schedule a Meeting",
+    "image": "/crd4.png",
+    "text": " We’ll set up a time to call you and the other party to hear your sides of the story and talk through your individual situations.  Each phone call takes up to an hour.  We’ll also talk you through the mediation session itself, and what to expect. After the Preliminary Session we will email you both:  Confirming the mediation date and time. an invoice for upfront payment for Phase 5.  "
+  },
+
+  {
+    "id": 5,
+    "title": "Session start    ",
+    "image": "/crd5.png",
+    "text": "  The mediation session itself normally takes about 4 to 5 hours.  The length and number of sessions will depend on the number of issues raised and the general complexity.  The session takes place via a video call and you and the other party can attend with your respective lawyer, although we strongly recommend they don’t intervene during the sessions.    "
+  }
+]

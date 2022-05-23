@@ -2,8 +2,8 @@ import {
   CopywriteContainer,
   FooterContainer,
   FooterWrapper,
-    LinkWrapper,
-    FooterLinks,
+  LinkWrapper,
+  FooterLinks,
 } from './Footer.styled';
 import { FaDiscord, FaTwitter, FaGithub } from 'react-icons/fa';
 import { RiCopyrightLine } from 'react-icons/ri';

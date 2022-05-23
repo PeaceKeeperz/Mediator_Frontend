@@ -1,12 +1,28 @@
 import styled from 'styled-components';
-
+import bg from '../../images/mosaic.png';
 export const FooterContainer = styled.footer`
   background: #000;
+  background-image: url(${bg.src});
   padding: 40px;
   text-align: center;
   width: 100%;
   border-top: 1px solid white;
   color: white;
+  @media screen and (min-width: 280px) and (max-width: 1080px){
+    width: 400%;
+    position: absolute;
+    left: 0px;
+    zoom: 2;
+    
+    
+
+    
+    
+    
+    
+    
+    
+  }
 `;
 
 export const FooterWrapper = styled.div`
@@ -14,10 +30,28 @@ export const FooterWrapper = styled.div`
   max-width: 90em;
   display: flex;
   margin: 0 auto;
- `;
+  @media screen and (min-width: 280px) and (max-width: 1080px){
+    position: absolute;
+    
+    
+    width: 100%;
+    bottom: 0;
+    
+    
+    
+  }
+`;
 
-export const CopywriteContainer = styled.div``;
-
+export const CopywriteContainer = styled.div`
+  display: flex;
+  font-family: 'Macondo';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  align-items: center;
+  gap: 6px;
+`;
 
 export const LinkWrapper = styled.div`
   display: flex;
