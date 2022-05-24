@@ -20,11 +20,7 @@ export default function Card(props) {
         <Title>{props.title}</Title>
 
         <Text>
-          If you’re part of a Dao or company, you could register through your
-          employee’s account. If you’re a person, you can do it individually.
-          Here you’ll have to provide us with your data and your employees or
-          contributors if applicable, such as: name, physical address, ETH
-          address, phone number, etc.
+          {props.text}
         </Text>
       </ParagraphContainer>
     </CardContainer>
