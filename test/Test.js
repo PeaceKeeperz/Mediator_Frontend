@@ -92,6 +92,25 @@ const Test = ({}) => {
         }
     }
 
+    const withdrawToAddress = {
+        abi: MEDIATION_ABI,
+        contractAddress: MEDIATION_ADDRESS,
+        functionName: "withdrawToAddress",
+        chain: "rinkeby",
+        params: { // read this field from an input, use react useState hooks
+            _address: "0x6E3A23c3DEeab3291f8Ea89ea31c8814960B8499",
+            _amount: Moralis.Units.ETH("0.0000001")
+        }
+    }
+
+    const getAllMediators = {
+        abi: MEDIATOR_ABI,
+        contractAddress: MEDIATOR_ADDRESS,
+        functionName: "getAllMediators",
+        params: { 
+        }
+    }
+
     return (
         <>
             <Text>Add a new mediator</Text>
@@ -164,6 +183,25 @@ const Test = ({}) => {
                     Close Case 
                 </button>
                 {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
+            </div>
+
+
+            <Text>Withdraw 0.0000001 Eth to an address</Text>
+            <div>
+                {/* {error && <ErrorMessage error={error} />} */}
+                <button onClick={() => runContractFunction({params: withdrawToAddress})} disabled={isFetching}>
+                    Withdraw to specified address
+                </button>
+                {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
+            </div>
+
+            <Text>Get all Mediators</Text>
+            <div>
+                {/* {error && <ErrorMessage error={error} />} */}
+                <button onClick={() => runContractFunction({params: getAllMediators})} disabled={isFetching}>
+                    Get mediators
+                </button>
+                {data && <Text>{JSON.stringify(data)}</Text>}
             </div>
 
         </>
