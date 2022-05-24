@@ -6,8 +6,10 @@ import {
   TitleContainer,
   Title,
   InfoContainer,
-  InfoTitle,
+  InfoDetails,
   InfoWrapper,
+  InfoDetails,
+  DetailsWrapper,
 } from './Dashboard.styled';
 import ListCard from './List';
 import data from './tData.json';
@@ -119,15 +121,19 @@ export default function Dashboard() {
               <Title>Case Details</Title>
             </TitleContainer>
             <InfoWrapper>
-              <InfoTitle>name: {caseInfo.name}</InfoTitle>
-              <InfoTitle>Party one: {caseInfo.partyone}</InfoTitle>
-              <InfoTitle>Party two: {caseInfo.partytwo}</InfoTitle>
-              <InfoTitle>Mediator: {caseInfo.mediator}</InfoTitle>
-              <InfoTitle>Case Closed: {caseInfo.caseClosed}</InfoTitle>
-              <InfoTitle>Toke Uri: {caseInfo.token}</InfoTitle>
-              <InfoTitle>Date: {caseInfo.date}</InfoTitle>
-              <InfoTitle>Session Number: {caseInfo.sessionnumber}</InfoTitle>
-              <InfoTitle>Session Started: {caseInfo.sessionstarted}</InfoTitle>
+              <InfoDetails>name: {caseInfo.name}</InfoDetails>
+              <InfoDetails>Party one: {caseInfo.partyone}</InfoDetails>
+              <InfoDetails>Party two: {caseInfo.partytwo}</InfoDetails>
+              <InfoDetails>Mediator: {caseInfo.mediator}</InfoDetails>
+              <InfoDetails>Case Closed: {caseInfo.caseClosed}</InfoDetails>
+              <InfoDetails>Toke Uri: {caseInfo.token}</InfoDetails>
+              <InfoDetails>Date: {caseInfo.date}</InfoDetails>
+              <InfoDetails>
+                Session Number: {caseInfo.sessionnumber}
+              </InfoDetails>
+              <InfoDetails>
+                Session Started: {caseInfo.sessionstarted}
+              </InfoDetails>
             </InfoWrapper>
           </InfoContainer>
           <InfoContainer>
@@ -135,19 +141,23 @@ export default function Dashboard() {
               <Title>Session Details</Title>
             </TitleContainer>
             <InfoWrapper>
-              <InfoTitle>id: {session.sessionid}</InfoTitle>
-              <InfoTitle>Party one: {session.partyone}</InfoTitle>
-              <InfoTitle>Party two: {session.partytwo}</InfoTitle>
-              <InfoTitle>Mediator: {session.mediator}</InfoTitle>
-              <InfoTitle>
+              <InfoDetails>Case id: {session.sessionid}</InfoDetails>
+              <InfoDetails>Party one: {session.partyone}</InfoDetails>
+              <InfoDetails>Party two: {session.partytwo}</InfoDetails>
+              <InfoDetails>Mediator: {session.mediator}</InfoDetails>
+              <InfoDetails>
                 First Party Members: {session.firstPartyMembers}
-              </InfoTitle>
-              <InfoTitle>
+              </InfoDetails>
+              <InfoDetails>
                 Second Party Members: {session.secondPartyMembers}
-              </InfoTitle>
-              <InfoTitle>Session Closed: {session.sessionClosed}</InfoTitle>
-              <InfoTitle>Session Started: {session.sessionStarted}</InfoTitle>
-              <InfoTitle>Session Created: {session.sessionCreated}</InfoTitle>
+              </InfoDetails>
+              <InfoDetails>Session Closed: {session.sessionClosed}</InfoDetails>
+              <InfoDetails>
+                Session Started: {session.sessionStarted}
+              </InfoDetails>
+              <InfoDetails>
+                Session Created: {session.sessionCreated}
+              </InfoDetails>
             </InfoWrapper>
           </InfoContainer>
         </Wrapper>
@@ -155,29 +165,3 @@ export default function Dashboard() {
     </>
   );
 }
-
-// const handleClick = () => {
-//   setCase({
-//     id: card.id,
-//     name: card.name,
-//     partyOne: card.partyone,
-//     partyTwo: card.partytwo,
-//     mediator: card.mediator,
-//     caseClosed: card.caseClosed,
-//     token: card.token,
-//     date: card.date,
-//     sessionNumber: card.sessionnumber,
-//     sessionStarted: card.sessionstarted,
-//   });
-// }
-
-//     key={card.id}
-// name={card.name}
-// date={card.date}
-// partyOne={card.partyone}
-// partyTwo={card.partytwo}
-// mediator={card.mediator}
-// caseClosed={card.caseClosed}
-// token={card.token}
-// sessionNumber={card.sessionnumber}
-// sessionStarted= {card.sessionstarted}
