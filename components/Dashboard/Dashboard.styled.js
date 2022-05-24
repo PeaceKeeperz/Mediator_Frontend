@@ -24,7 +24,6 @@ export const Dcontainer = styled.div`
 `;
 
 export const TitleContainer = styled.div`
-  /* justify-content: center; */
   margin-left: auto;
   margin-right: auto;
 `
@@ -34,7 +33,7 @@ export const Title = styled.h1`
 `
 
 export const InfoContainer = styled.div`
-  width: 800px;
+  width: 380px;
   background: grey;
   display: flex;
   justify-content: flex-start;
@@ -46,5 +45,11 @@ export const InfoContainer = styled.div`
 export const InfoTitle = styled.h2`
   color: white;
   font-size: 1em;
-  
+  padding: 0 .5em 0 .5em;
 `
+
+export const InfoWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+`;

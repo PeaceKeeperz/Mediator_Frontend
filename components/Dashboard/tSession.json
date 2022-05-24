@@ -1,17 +1,44 @@
 [
   {
     "id": 1,
+    "sessionid": "1",
     "name": "Session1",
-    "date": "05/05/2022"
+    "date": "05/05/2022",
+    "partyone": "Address1",
+    "partytwo": "Adderss2",
+    "mediator": "Adress of mediator",
+    "firstPartyMembers": ["Party1 address", "Party1 address"],
+    "secondPartyMembers": ["Party2 address", "PartyTwo address"],
+    "sessionClosed": "true",
+    "sessionStarted": "true",
+    "sessionCreated": "some date"
   },
-  {
+    {
     "id": 2,
+    "sessionid": "2",
+    "date": "05/05/2022",
     "name": "Session2",
-    "date": "05/05/2022"
+    "partyone": "Address1",
+    "partytwo": "Adderss2",
+    "mediator": "Adress of mediator",
+    "firstPartyMembers": ["Party1 address", "Party1 address"],
+    "secondPartyMembers": ["Party2 address", "PartyTwo address"],
+    "sessionClosed": "true",
+    "sessionStarted": "true",
+    "sessionCreated": "some date"
   },
-  {
-    "id": 3,
-    "name": "Session3",
-    "date": "05/05/2022"
-  }
+    {
+      "id": 3,
+      "sessionid": "3",
+      "name": "Session3",
+      "date": "05/05/2022",
+      "partyone": "Address1",
+      "partytwo": "Adderss2",
+      "mediator": "Adress of mediator",
+      "firstPartyMembers": ["Party1 address", "Party1 address"],
+      "secondPartyMembers": ["Party2 address", "PartyTwo address"],
+      "sessionClosed": "true",
+      "sessionStarted": "true",
+      "sessionCreated": "some date"
+    }
 ]
