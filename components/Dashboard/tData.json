@@ -1,17 +1,39 @@
 [
   {
     "id": 1,
+    "caseid": "1",
     "name": "Case1",
-    "date": "05/05/2022"
+    "partyone":  "Address1",
+    "partytwo": "Adderss2",
+    "mediator": "Adress of mediator",
+    "caseClosed": "No",
+    "token" : "some uri",
+    "date": "05/05/2022",
+    "sessionnumber": "3",
+    "sessionstarted": "true"
 
   },
   {
     "id": 2,
     "name": "Case2",
-    "date": "05/05/2022"
+    "partyone": "Address1",
+    "partytwo": "Adderss2",
+    "mediator": "Adress of mediator",
+    "caseClosed": "No",
+    "token": "some uri",
+    "date": "05/05/2022",
+    "sessionnumber": "3",
+    "sessionstarted": "true"
   },{
     "id": 3,
     "name": "Case3",
-    "date": "05/05/2022"
+    "partyone": "Address1",
+    "partytwo": "Adderss2",
+    "mediator": "Adress of mediator",
+    "caseClosed": "No",
+    "token": "some uri",
+    "date": "05/05/2022",
+    "sessionnumber": "3",
+    "sessionstarted": "true"
   }
 ]

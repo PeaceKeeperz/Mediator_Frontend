@@ -1,5 +1,17 @@
 import styled from 'styled-components';
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+`;
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+`
+
 export const Dcontainer = styled.div`
   height: 388px;
   width: 380px;
@@ -11,9 +23,6 @@ export const Dcontainer = styled.div`
   overflow: auto;
 `;
 
-export const Container = styled.div`
-  display: flex;
-`
 export const TitleContainer = styled.div`
   /* justify-content: center; */
   margin-left: auto;

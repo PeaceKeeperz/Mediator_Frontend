@@ -1,13 +1,10 @@
 import React from 'react';
 import { CardContainer, Info, Date, Wrapper } from './list.styled';
 
-export default function ListCard(props, { setCaseInfo }) {
-  const handleClick = () => {
-    setCaseInfo(props.name);
-  };
+export default function ListCard(props) {
 
   return (
-    <CardContainer onClick={handleClick}>
+    <CardContainer onClick={() => props.handleClick(props.name)}>
       <Info>{props.name}</Info>
       <Wrapper>
         <Date>{props.date}</Date>
@@ -15,3 +12,10 @@ export default function ListCard(props, { setCaseInfo }) {
     </CardContainer>
   );
 }
+
+// props.date,
+//   props.partyOne,
+//   props.partyTwo,
+//   props.mediator,
+//   props.caseClosed,
+  // props.token;
