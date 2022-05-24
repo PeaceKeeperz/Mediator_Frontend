@@ -16,3 +16,11 @@ color: red;
 
 `;
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: Column;
+`;
+export const Container2 = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
