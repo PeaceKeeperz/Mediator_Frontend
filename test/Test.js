@@ -52,6 +52,17 @@ const Test = ({}) => {
         }
     }
 
+    const joinCase = {
+        abi: MEDIATION_ABI,
+        contractAddress: MEDIATION_ADDRESS,
+        functionName: "joinCase",
+        chain: "rinkeby",
+        params: { // read this field from an input, use react useState hooks
+            _caseId: 1,
+            _party: 1 // it can take either 1 or 2 for the respective parties
+        }
+    }
+
     const startSession = {
         abi: MEDIATION_ABI,
         contractAddress: MEDIATION_ADDRESS,
@@ -76,6 +87,16 @@ const Test = ({}) => {
         abi: MEDIATION_ABI,
         contractAddress: MEDIATION_ADDRESS,
         functionName: "endSession",
+        chain: "rinkeby",
+        params: { // read this field from an input, use react useState hooks
+            _caseId: 1
+        }
+    }
+
+    const endSessionWithoutPay = {
+        abi: MEDIATION_ABI,
+        contractAddress: MEDIATION_ADDRESS,
+        functionName: "endSessionWithoutPay",
         chain: "rinkeby",
         params: { // read this field from an input, use react useState hooks
             _caseId: 1
@@ -108,6 +129,91 @@ const Test = ({}) => {
         contractAddress: MEDIATOR_ADDRESS,
         functionName: "getAllMediators",
         params: { 
+        }
+    }
+
+    const getFirstPartyMembers = {
+        abi: MEDIATION_ABI,
+        contractAddress: MEDIATION_ADDRESS,
+        functionName: "getFirstPartyMembers",
+        chain: "rinkeby",
+        params: { // read this field from an input, use react useState hooks
+            _caseId: 1
+        }
+    }
+
+    const getSecondPartyMembers = {
+        abi: MEDIATION_ABI,
+        contractAddress: MEDIATION_ADDRESS,
+        functionName: "getSecondPartyMembers",
+        chain: "rinkeby",
+        params: { // read this field from an input, use react useState hooks
+            _caseId: 1
+        }
+    }
+
+    const createBookedSession = {
+        abi: MEDIATION_ABI,
+        contractAddress: MEDIATION_ADDRESS,
+        functionName: "createBookedSession",
+        chain: "rinkeby",
+        msgValue: Moralis.Units.ETH("0.0005"),
+        params: { // read this field from an input, use react useState hooks
+            _caseId: 1
+        }
+    }
+
+    const joinBookedSessionAsSecondParty = {
+        abi: MEDIATION_ABI,
+        contractAddress: MEDIATION_ADDRESS,
+        functionName: "joinBookedSessionAsSecondParty",
+        chain: "rinkeby",
+        msgValue: Moralis.Units.ETH("0.0005"),
+        params: { // read this field from an input, use react useState hooks
+            _caseId: 1
+        }
+    }
+
+    const startBookedSession = {
+        abi: MEDIATION_ABI,
+        contractAddress: MEDIATION_ADDRESS,
+        functionName: "startBookedSession",
+        chain: "rinkeby",
+        params: { // read this field from an input, use react useState hooks
+            _caseId: 1
+        }
+    }
+
+    const endBookedSession = {
+        abi: MEDIATION_ABI,
+        contractAddress: MEDIATION_ADDRESS,
+        functionName: "endBookedSession",
+        chain: "rinkeby",
+        params: { // read this field from an input, use react useState hooks
+            _caseId: 1
+        }
+    }
+
+    const companyCreateCase = {
+        abi: MEDIATION_ABI,
+        contractAddress: MEDIATION_ADDRESS,
+        functionName: "companyCreateCase",
+        chain: "rinkeby",
+        msgValue: Moralis.Units.ETH("0.006"),
+        params: { // read this field from an input, use react useState hooks
+            _firstParty: "0x8BEcEEB3f7dc843307BB842bD97975644D5C4ad6",
+            _secondParty: "0x79A44d9c6d04F397ad752dFc8e0590f66d9a9ebc"
+        }
+    }
+
+    const companyCreateBookedSession = {
+        abi: MEDIATION_ABI,
+        contractAddress: MEDIATION_ADDRESS,
+        functionName: "companyCreateBookedSession",
+        chain: "rinkeby",
+        msgValue: Moralis.Units.ETH("0.002"),
+        params: { // read this field from an input, use react useState hooks
+            _caseId: 1
         }
     }
 
@@ -149,6 +255,15 @@ const Test = ({}) => {
                 {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
             </div>
 
+            <Text>Join case as either for party 1 or party 2</Text>
+            <div>
+                {/* {error && <ErrorMessage error={error} />} */}
+                <button onClick={() => runContractFunction({params: joinCase})} disabled={isFetching}>
+                    Join Case
+                </button>
+                {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
+            </div>
+
             <Text>Mediator should start a session</Text>
             <div>
                 {/* {error && <ErrorMessage error={error} />} */}
@@ -172,6 +287,15 @@ const Test = ({}) => {
                 {/* {error && <ErrorMessage error={error} />} */}
                 <button onClick={() => runContractFunction({params: endSession})} disabled={isFetching}>
                     End Session
+                </button>
+                {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
+            </div>
+
+            <Text>Mediator end Session without getting paid</Text>
+            <div>
+                {/* {error && <ErrorMessage error={error} />} */}
+                <button onClick={() => runContractFunction({params: endSessionWithoutPay})} disabled={isFetching}>
+                    End Session without Pay
                 </button>
                 {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
             </div>
@@ -202,6 +326,72 @@ const Test = ({}) => {
                     Get mediators
                 </button>
                 {data && <Text>{JSON.stringify(data)}</Text>}
+            </div>
+
+            <Text>Get all first party members</Text>
+            <div>
+                {/* {error && <ErrorMessage error={error} />} */}
+                <button onClick={() => runContractFunction({params: getFirstPartyMembers})} disabled={isFetching}>
+                    Show First Party Members
+                </button>
+                {data && <Text>{JSON.stringify(data)}</Text>}
+            </div>
+
+            <Text>Get all second party members</Text>
+            <div>
+                {/* {error && <ErrorMessage error={error} />} */}
+                <button onClick={() => runContractFunction({params: getSecondPartyMembers})} disabled={isFetching}>
+                    Show Second Party Members
+                </button>
+                {data && <Text>{JSON.stringify(data)}</Text>}
+            </div>
+
+            <Text>Book a session</Text>
+            <div>
+                {/* {error && <ErrorMessage error={error} />} */}
+                <button onClick={() => runContractFunction({params: createBookedSession})} disabled={isFetching}>
+                    Book a Session
+                </button>
+            </div>
+
+            <Text>Join a Booked a session</Text>
+            <div>
+                {/* {error && <ErrorMessage error={error} />} */}
+                <button onClick={() => runContractFunction({params: joinBookedSessionAsSecondParty})} disabled={isFetching}>
+                    Join booked session
+                </button>
+            </div>
+
+            <Text>Start a Booked a session</Text>
+            <div>
+                {/* {error && <ErrorMessage error={error} />} */}
+                <button onClick={() => runContractFunction({params: startBookedSession})} disabled={isFetching}>
+                    Start booked session
+                </button>
+            </div>
+
+            <Text>End a Booked a session</Text>
+            <div>
+                {/* {error && <ErrorMessage error={error} />} */}
+                <button onClick={() => runContractFunction({params: endBookedSession})} disabled={isFetching}>
+                    End booked session
+                </button>
+            </div>
+
+            <Text>Create a new case as a company or organization, provinding the addresses of the two parties and paying the full fee</Text>
+            <div>
+                {/* {error && <ErrorMessage error={error} />} */}
+                <button onClick={() => runContractFunction({params: companyCreateCase})} disabled={isFetching}>
+                    Create case as a company
+                </button>
+            </div>
+
+            <Text>Create a new booked session as a company or organization, provinding the caseId and paying the full fee</Text>
+            <div>
+                {/* {error && <ErrorMessage error={error} />} */}
+                <button onClick={() => runContractFunction({params: companyCreateBookedSession})} disabled={isFetching}>
+                    Create case as a company
+                </button>
             </div>
 
         </>
