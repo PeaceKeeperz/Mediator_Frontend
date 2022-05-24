@@ -1,7 +1,7 @@
 import React from 'react';
 import { CardContainer, Info, Date, Wrapper } from './list.styled';
 
-export default function ListCard(props, {setCaseInfo}) {
+export default function ListCard(props, { setCaseInfo }) {
   const handleClick = () => {
     setCaseInfo(props.name);
   };

@@ -4,7 +4,7 @@ import {
   Container,
   TitleContainer,
   Title,
-    InfoContainer,
+  InfoContainer,
   InfoTitle,
 } from './Dashboard.styled';
 import ListCard from './List';
@@ -12,7 +12,7 @@ import data from './tData.json';
 import sessionD from './tSession.json';
 
 export default function Dashboard() {
-  const [caseInfo, setCaseInfo] = useState('');
+  const [caseInfo, setCaseInfo] = useState('Title');
   const cards = data.map((card) => {
     return (
       <ListCard

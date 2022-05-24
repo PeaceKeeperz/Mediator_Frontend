@@ -28,6 +28,7 @@ export const InfoContainer = styled.div`
   width: 800px;
   background: grey;
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
   margin: 1em;
   padding: 0em 2em 1em 2em;
@@ -36,4 +37,5 @@ export const InfoContainer = styled.div`
 export const InfoTitle = styled.h2`
   color: white;
   font-size: 1em;
+  
 `

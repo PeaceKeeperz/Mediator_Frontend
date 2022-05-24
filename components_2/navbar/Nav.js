@@ -50,13 +50,13 @@ function MainNavigation() {
           </Link>
           <NavMenu>
             <NavItem>
-              <NavLinks href='/'>My Dashboard</NavLinks>
+              <NavLinks >My Dashboard</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks href='/'>Mediation</NavLinks>
+              <NavLinks >Mediation</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks href='/'>Mediator</NavLinks>
+              <NavLinks >Mediator</NavLinks>
             </NavItem>
           </NavMenu>
 
