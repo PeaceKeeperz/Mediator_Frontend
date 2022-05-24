@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
   width: 100%;
@@ -108,7 +107,7 @@ export const NavItem = styled.li`
   } */
 `;
 
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled.div`
   color: white;
   display: flex;
   align-items: center;

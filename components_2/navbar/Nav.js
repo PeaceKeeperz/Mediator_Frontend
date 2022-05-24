@@ -55,24 +55,12 @@ toggleHome()
               <NavLinks onClick= {toggleHome}>My Dashboard</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks
-                to='about'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-192}>
+              <NavLinks>
                 Mediation
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks
-                to='when'
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-192}>
+              <NavLinks>
                 Mediator
               </NavLinks>
             </NavItem>
