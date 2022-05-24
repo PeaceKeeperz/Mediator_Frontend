@@ -6,14 +6,12 @@ import {
   TitleContainer,
   Title,
   InfoContainer,
-  InfoDetails,
   InfoWrapper,
   InfoDetails,
-  DetailsWrapper,
 } from './Dashboard.styled';
 import ListCard from './List';
-import data from './tData.json';
-import sessionD from './tSession.json';
+import caseData  from './tData.json';
+import sessionData from './tSession.json';
 
 export default function Dashboard() {
   const [caseInfo, setCase] = useState({
@@ -45,7 +43,7 @@ export default function Dashboard() {
   });
   const [name, setName] = useState('');
 
-  const cards = data.map((card) => {
+  const cards = caseData.map((card) => {
     const handleClick = () => {
       setCase({
         id: card.id,
@@ -71,7 +69,7 @@ export default function Dashboard() {
     );
   });
 
-  const sessions = sessionD.map((card) => {
+  const sessions = sessionData.map((card) => {
     const handleClick = () => {
       setSession({
         id: card.id,
@@ -79,7 +77,7 @@ export default function Dashboard() {
         name: card.name,
         partyone: card.partyone,
         partytwo: card.partytwo,
-        mediaotr: card.mediator,
+        mediator: card.mediator,
         firstPartyMembers: card.firstPartyMembers,
         secondPartyMembers: card.secondPartyMembers,
         sessionClosed: card.sessionClosed,

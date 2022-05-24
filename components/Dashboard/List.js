@@ -12,10 +12,3 @@ export default function ListCard(props) {
     </CardContainer>
   );
 }
-
-// props.date,
-//   props.partyOne,
-//   props.partyTwo,
-//   props.mediator,
-//   props.caseClosed,
-  // props.token;
