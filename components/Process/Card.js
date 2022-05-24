@@ -11,14 +11,13 @@ import Image from 'next/image';
 
 export default function Card(props) {
   return (
-    <CardContainer >
+    <CardContainer>
       <ImageContainer>
         <Image src={props.img} width={98} height={28} />
       </ImageContainer>
 
       <ParagraphContainer>
         <Title>{props.title}</Title>
-
         <Text>
           If you’re part of a Dao or company, you could register through your
           employee’s account. If you’re a person, you can do it individually.

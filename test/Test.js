@@ -1,8 +1,8 @@
 
 import {MEDIATION_ABI, MEDIATION_ADDRESS, MEDIATOR_ABI, MEDIATOR_ADDRESS} from "../constants/index";
 import { useWeb3Contract, useMoralis } from "react-moralis";
-import { Text, ErrorMessage } from "./Test.styled";
-
+import { Text, ErrorMessage, Container, Container2 } from "./Test.styled";
+import Dashboard from '../components/Dashboard/Dashboard';
 const Test = ({}) => {
     const {Moralis} = useMoralis();
     const { data, error, runContractFunction, isFetching, isLoading } =
@@ -93,81 +93,109 @@ const Test = ({}) => {
     }
 
     return (
-        <>
+      <>
+        <Container>
+          <Container2>
             <Text>Add a new mediator</Text>
             <div>
-                {/* {error && <ErrorMessage error={error} />} */}
-                <button onClick={() => runContractFunction({params: createMediator})} disabled={isFetching}>
-                    Create Mediator
-                </button>
-                {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
+              {/* {error && <ErrorMessage error={error} />} */}
+              <button
+                onClick={() => runContractFunction({ params: createMediator })}
+                disabled={isFetching}>
+                Create Mediator
+              </button>
+              {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
             </div>
 
             <Text>Create a new case</Text>
             <div>
-                {/* {error && <ErrorMessage error={error} />} */}
-                <button onClick={() => runContractFunction({params: createCase})} disabled={isFetching}>
-                    Create Case
-                </button>
-                {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
+              {/* {error && <ErrorMessage error={error} />} */}
+              <button
+                onClick={() => runContractFunction({ params: createCase })}
+                disabled={isFetching}>
+                Create Case
+              </button>
+              {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
             </div>
 
             <Text>Join case as second party</Text>
             <div>
-                {/* {error && <ErrorMessage error={error} />} */}
-                <button onClick={() => runContractFunction({params: joinCaseAsSecondParty})} disabled={isFetching}>
-                    Join case as second party
-                </button>
-                {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
+              {/* {error && <ErrorMessage error={error} />} */}
+              <button
+                onClick={() =>
+                  runContractFunction({ params: joinCaseAsSecondParty })
+                }
+                disabled={isFetching}>
+                Join case as second party
+              </button>
+              {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
             </div>
 
             <Text>Assign random mediator to case</Text>
             <div>
-                {/* {error && <ErrorMessage error={error} />} */}
-                <button onClick={() => runContractFunction({params: assignMediator})} disabled={isFetching}>
-                    Assign Mediator
-                </button>
-                {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
+              {/* {error && <ErrorMessage error={error} />} */}
+              <button
+                onClick={() => runContractFunction({ params: assignMediator })}
+                disabled={isFetching}>
+                Assign Mediator
+              </button>
+              {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
             </div>
 
             <Text>Mediator should start a session</Text>
             <div>
-                {/* {error && <ErrorMessage error={error} />} */}
-                <button onClick={() => runContractFunction({params: startSession})} disabled={isFetching}>
-                    Start session
-                </button>
-                {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
+              {/* {error && <ErrorMessage error={error} />} */}
+              <button
+                onClick={() => runContractFunction({ params: startSession })}
+                disabled={isFetching}>
+                Start session
+              </button>
+              {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
             </div>
 
-            <Text>Parties should accept payment so mediator can end the sessiona and receive payment</Text>
+            <Text>
+              Parties should accept payment so mediator can end the sessiona and
+              receive payment
+            </Text>
             <div>
-                {/* {error && <ErrorMessage error={error} />} */}
-                <button onClick={() => runContractFunction({params: acceptPayment})} disabled={isFetching}>
-                    Accept Payment
-                </button>
-                {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
+              {/* {error && <ErrorMessage error={error} />} */}
+              <button
+                onClick={() => runContractFunction({ params: acceptPayment })}
+                disabled={isFetching}>
+                Accept Payment
+              </button>
+              {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
             </div>
 
             <Text>Mediator end Session and get paid</Text>
             <div>
-                {/* {error && <ErrorMessage error={error} />} */}
-                <button onClick={() => runContractFunction({params: endSession})} disabled={isFetching}>
-                    End Session
-                </button>
-                {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
+              {/* {error && <ErrorMessage error={error} />} */}
+              <button
+                onClick={() => runContractFunction({ params: endSession })}
+                disabled={isFetching}>
+                End Session
+              </button>
+              {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
             </div>
 
-            <Text>Close a case. this will check if the number of default sessions were exhuasted if not pay back the parties</Text>
+            <Text>
+              Close a case. this will check if the number of default sessions
+              were exhuasted if not pay back the parties
+            </Text>
             <div>
-                {/* {error && <ErrorMessage error={error} />} */}
-                <button onClick={() => runContractFunction({params: closeCase})} disabled={isFetching}>
-                    Close Case 
-                </button>
-                {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
+              {/* {error && <ErrorMessage error={error} />} */}
+              <button
+                onClick={() => runContractFunction({ params: closeCase })}
+                disabled={isFetching}>
+                Close Case
+              </button>
+              {/* {data && <Text>{JSON.stringify(data)}</Text>} */}
             </div>
-
-        </>
-    )
+          </Container2>
+          <Dashboard />
+        </Container>
+      </>
+    );
 }
 
 export default Test

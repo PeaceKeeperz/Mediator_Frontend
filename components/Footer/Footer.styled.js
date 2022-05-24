@@ -8,20 +8,11 @@ export const FooterContainer = styled.footer`
   width: 100%;
   border-top: 1px solid white;
   color: white;
-  @media screen and (min-width: 280px) and (max-width: 1080px){
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
     width: 400%;
     position: absolute;
     left: 0px;
     zoom: 2;
-    
-    
-
-    
-    
-    
-    
-    
-    
   }
 `;
 
@@ -30,15 +21,11 @@ export const FooterWrapper = styled.div`
   max-width: 90em;
   display: flex;
   margin: 0 auto;
-  @media screen and (min-width: 280px) and (max-width: 1080px){
+  @media screen and (min-width: 280px) and (max-width: 1080px) {
     position: absolute;
-    
-    
+
     width: 100%;
     bottom: 0;
-    
-    
-    
   }
 `;
 
