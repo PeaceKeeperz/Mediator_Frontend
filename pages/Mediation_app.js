@@ -5,7 +5,7 @@ function Mediation_app() {
   return (
     <div>
       <Nav />
-      <UserPage />
+      {/* <UserPage /> */}
       <Test />
     </div>
   );
