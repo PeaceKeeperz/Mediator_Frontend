@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  padding: 1em;
 `;
 
 export const Wrapper = styled.div`
@@ -33,6 +34,7 @@ export const Title = styled.h1`
 `;
 
 export const InfoContainer = styled.div`
+  height: 388px;
   width: 380px;
   background: grey;
   display: flex;
