@@ -10,6 +10,8 @@ import {
 } from '../HeroSection/Hero.styled';
 
 import bg from '../../images/hero.png';
+import Link from 'next/link';
+
 function Hero() {
   return (
     <HeroContainer>
@@ -22,7 +24,9 @@ function Hero() {
               the counterpart, with a 3rd person who will guide you to a
               solution.
             </Paragraph>
-            <Button> Launch App</Button>
+            <Link href='/Mediation_app'>
+              <Button>Launch App</Button>
+            </Link>
           </ContentWrapper>
         </GridContainer>
       </ContentContainer>

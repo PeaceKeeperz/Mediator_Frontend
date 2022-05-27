@@ -60,17 +60,21 @@ toggleHome()
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks>
+              <NavLinks
+                onClick={() => setNavExpanded(!navExpanded)}
+                to="mediator"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-192}>
                 Mediator
               </NavLinks>
             </NavItem>
             
           </NavMenu> 
           
-          <Link href="/Mediation_app">
-          {/* <Button1>Connect Wallet</Button1> */}
           <ConnectButton />
-          </Link>
           <Button2 onClick={()=> setNavExpanded(!navExpanded)}>  <FiMenu size={40} /> </Button2>
           <Button3 onClick={()=> setNavExpanded(!navExpanded)}>  <AiOutlineClose size={40} /> </Button3>
          
