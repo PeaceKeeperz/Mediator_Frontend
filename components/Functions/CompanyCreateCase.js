@@ -13,7 +13,7 @@ function CompanyCreateCase() {
       <Fname>Company Create Case</Fname>
       <form>
         <Label>First Party Address</Label>
-        <Input id='joincaseID' type='text' palceholder='Your Case ID..' />
+        <Input id='joincaseID' type='text' placeholder='Your Case ID..' />
         <Label>Second Party Address</Label>
         <Button>Submit</Button>
       </form>
