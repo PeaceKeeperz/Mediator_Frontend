@@ -8,9 +8,8 @@ function Mediation_app() {
     <div>
       <Nav />
       <UserPage />
-      <Mediator />
-      <Mediation />
-      {/* <Test /> */}
+      {/* <Mediation />  */}
+       {/* <Test /> */}
     </div>
   );
 }

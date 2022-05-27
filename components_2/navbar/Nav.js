@@ -47,45 +47,40 @@ toggleHome()
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-        <Link href="/">
-          <NavLogo>PeaceKeepers</NavLogo>
+          <Link href='/'>
+            <NavLogo>PeaceKeepers</NavLogo>
           </Link>
-           <NavMenu>
-            <NavItem> 
-              <NavLinks onClick= {toggleHome}>My Dashboard</NavLinks>
+          <NavMenu>
+            <Link href="/Mediation_app">
+              <NavItem>
+                <NavLinks>My Dashboard</NavLinks>
+              </NavItem>
+            </Link>
+            <NavItem>
+              <Link href='/Mediatiorz'>
+                <NavLinks onClick={() => setNavExpanded(!navExpanded)}>
+                  Mediator
+                </NavLinks>
+              </Link>
             </NavItem>
             <NavItem>
-              <NavLinks
-                onClick={() => setNavExpanded(!navExpanded)}
-                to="mediator"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-192}>
-                Mediator
-              </NavLinks>
+              <Link href='/Mediationz'>
+                <NavLinks onClick={() => setNavExpanded(!navExpanded)}>
+                  Mediation
+                </NavLinks>
+              </Link>
             </NavItem>
-            <NavItem>
-              <NavLinks 
-                onClick={() => setNavExpanded(!navExpanded)}
-                to="mediation"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact='true'
-                offset={-192}>
-                Mediation
-              </NavLinks>
-            </NavItem>
-            
-            
-          </NavMenu> 
-          
+          </NavMenu>
+
           <ConnectButton />
-          <Button2 onClick={()=> setNavExpanded(!navExpanded)}>  <FiMenu size={40} /> </Button2>
-          <Button3 onClick={()=> setNavExpanded(!navExpanded)}>  <AiOutlineClose size={40} /> </Button3>
-         
+          <Button2 onClick={() => setNavExpanded(!navExpanded)}>
+            {' '}
+            <FiMenu size={40} />{' '}
+          </Button2>
+          <Button3 onClick={() => setNavExpanded(!navExpanded)}>
+            {' '}
+            <AiOutlineClose size={40} />{' '}
+          </Button3>
         </NavbarContainer>
       </Nav>
     </>
