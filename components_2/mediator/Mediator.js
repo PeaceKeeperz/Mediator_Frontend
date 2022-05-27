@@ -34,6 +34,14 @@ export default function Mediator() {
         },
       };
 
+
+      const getAllMediators = {
+        abi: MEDIATOR_ABI,
+        contractAddress: MEDIATOR_ADDRESS,
+        functionName: 'getAllMediators',
+        params: {},
+      };
+
     return (
         <Container name="mediator">
             <ContainerWrapper>
@@ -67,6 +75,13 @@ export default function Mediator() {
                         <Button onClick={() => runContractFunction({ params: createMediator })} disabled={isFetching}>
                     Create Mediator</Button>
                     </form>
+                </Functions>
+                
+                <Functions>
+                    <Fname>Show all mediator Addresses</Fname>
+                    <Button onClick={() => runContractFunction({ params: getAllMediators })} disabled={isFetching}>
+                    Show Mediators</Button>
+                    {data && <Label>{JSON.stringify(data)}</Label>}
                 </Functions>
             </ContainerWrapper>
         </Container>
