@@ -3,6 +3,8 @@ import CreateCase from '../Functions/CreateCase';
 import JoinCase from '../Functions/JoinCase';
 import BlockchainFunction from '../Functions/BlockchainFunc';
 import CompanyCreateCase from '../Functions/CompanyCreateCase';
+import BlockchainFunctionAsSecondParty from '../Functions/BlockchainFunctionAsSecondParty';
+import BlockchainFunctionAddMediator from '../Functions/BlockchainFunctionAddMediator';
 
 function UserForm() {
   return (
@@ -10,14 +12,17 @@ function UserForm() {
       <Container>
         <ContainerWrapper>
           <CreateCase />
-          <BlockchainFunction name='Add Mediator' />
-          <BlockchainFunction name='Join Case By Second Party' />
+          <BlockchainFunctionAsSecondParty name='Join Case As Second Party' />
+          <BlockchainFunctionAddMediator name='Assign a Mediator to Case' />
           <JoinCase />
-          <BlockchainFunction name='Get First Party Member' />
-          <BlockchainFunction name='Get Second Party Member' />
-          <BlockchainFunction name='Start Session' />
-          <BlockchainFunction name='Accept Payment' />
-          <BlockchainFunction name='End Session' />
+
+          {/* <BlockchainFunction name='Get First Party Member' /> */}
+          {/* <BlockchainFunction name='Get Second Party Member' /> */}
+
+
+          {/* <BlockchainFunction name='Start Session' /> */}
+          {/* <BlockchainFunction name='Accept Payment' /> */}
+          {/* <BlockchainFunction name='End Session' /> */}
           <BlockchainFunction name='End Session With out Pay' />
           <BlockchainFunction name='Create Booked Session' />
           <CompanyCreateCase />

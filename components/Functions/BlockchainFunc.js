@@ -7,7 +7,7 @@ function BlockchainFunction(props) {
       <Fname>{props.name}</Fname>
       <form>
         <Label>Case ID</Label>
-        <Input type='text' palceholder='Your Case ID..' />
+        <Input type='text' placeholder='Your Case ID..' />
         <Button>Submit</Button>
       </form>
     </Functions>

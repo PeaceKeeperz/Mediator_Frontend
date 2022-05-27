@@ -55,11 +55,6 @@ toggleHome()
               <NavLinks onClick= {toggleHome}>My Dashboard</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks>
-                Mediation
-              </NavLinks>
-            </NavItem>
-            <NavItem>
               <NavLinks
                 onClick={() => setNavExpanded(!navExpanded)}
                 to="mediator"
@@ -71,6 +66,19 @@ toggleHome()
                 Mediator
               </NavLinks>
             </NavItem>
+            <NavItem>
+              <NavLinks 
+                onClick={() => setNavExpanded(!navExpanded)}
+                to="mediation"
+                smooth={true}
+                duration={500}
+                spy={true}
+                exact='true'
+                offset={-192}>
+                Mediation
+              </NavLinks>
+            </NavItem>
+            
             
           </NavMenu> 
           

@@ -45,6 +45,7 @@ export default function Mediator() {
     return (
         <Container name="mediator">
             <ContainerWrapper>
+                <Label><strong>MEDIATOR SECTION</strong></Label>
                 <Functions>
                     <Label>Do you want to become a Mediator ?</Label>
                     <br />

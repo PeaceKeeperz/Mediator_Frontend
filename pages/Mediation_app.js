@@ -1,3 +1,4 @@
+import Mediation from '../components_2/mediation/Mediation';
 import Mediator from '../components_2/mediator/Mediator';
 import Nav from '../components_2/navbar/Nav';
 import Test from '../test/Test';
@@ -8,6 +9,7 @@ function Mediation_app() {
       <Nav />
       <UserPage />
       <Mediator />
+      <Mediation />
       {/* <Test /> */}
     </div>
   );
