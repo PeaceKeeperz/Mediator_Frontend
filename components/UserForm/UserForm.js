@@ -5,6 +5,12 @@ import BlockchainFunction from '../Functions/BlockchainFunc';
 import CompanyCreateCase from '../Functions/CompanyCreateCase';
 import BlockchainFunctionAsSecondParty from '../Functions/BlockchainFunctionAsSecondParty';
 import BlockchainFunctionAddMediator from '../Functions/BlockchainFunctionAddMediator';
+import BlockchainFunctionBookASession from '../Functions/BlockchainFunctionBookASession';
+import BlockchainFunctionJoinBookedSessionAsSecondParty from '../Functions/BlockchainFunctionJoinBookedSessionAsSecondParty';
+import BlockchainFunctionStartABookedSession from '../Functions/BlockchainFunctionStartABookedSession';
+import BlockchainFunctionEndBookedSession from '../Functions/BlockchainFunctionEndBookedSession';
+import BlockchainFunctionCompanyCreateBookedSession from '../Functions/BlockchainFunctionCompanyCreateBookedSession';
+import BlockchainFunctionCloseCase from '../Functions/BlockchainFunctionCloseCase';
 
 function UserForm() {
   return (
@@ -15,22 +21,13 @@ function UserForm() {
           <BlockchainFunctionAsSecondParty name='Join Case As Second Party' />
           <BlockchainFunctionAddMediator name='Assign a Mediator to Case' />
           <JoinCase />
-
-          {/* <BlockchainFunction name='Get First Party Member' /> */}
-          {/* <BlockchainFunction name='Get Second Party Member' /> */}
-
-
-          {/* <BlockchainFunction name='Start Session' /> */}
-          {/* <BlockchainFunction name='Accept Payment' /> */}
-          {/* <BlockchainFunction name='End Session' /> */}
-          <BlockchainFunction name='End Session With out Pay' />
-          <BlockchainFunction name='Create Booked Session' />
           <CompanyCreateCase />
-          <BlockchainFunction name='Join Session As Second Party' />
-          <BlockchainFunction name='Company Create Booked Session' />
-          <BlockchainFunction name='Start Booked Session' />
-          <BlockchainFunction name='End Booked Session' />
-          <BlockchainFunction name='Close Case' />
+          <BlockchainFunctionBookASession name='Book a new Session' />
+          <BlockchainFunctionJoinBookedSessionAsSecondParty name='Join Booked Session As Second Party' />
+          <BlockchainFunctionStartABookedSession name='Start Booked Session' />
+          <BlockchainFunctionEndBookedSession name='End Booked Session' />
+          <BlockchainFunctionCompanyCreateBookedSession name='Company Create Booked Session' />        
+          <BlockchainFunctionCloseCase name='Close Case' />
         </ContainerWrapper>
       </Container>
     </>

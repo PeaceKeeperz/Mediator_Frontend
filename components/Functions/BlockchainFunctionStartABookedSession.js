@@ -8,16 +8,17 @@ import {
   } from '../../constants/index';
   import { useWeb3Contract, useMoralis } from 'react-moralis';
 
-function BlockchainFunctionEndSession(props) {
-    const { data, error, runContractFunction, isFetching, isLoading } =
+function BlockchainFunctionStartABookedSession(props) {
+    const { Moralis } = useMoralis();
+  const { data, error, runContractFunction, isFetching, isLoading } =
     useWeb3Contract();
 
     const [caseId, setCaseId] = useState(0);
 
-    const endSession = {
+    const startBookedSession = {
         abi: MEDIATION_ABI,
         contractAddress: MEDIATION_ADDRESS,
-        functionName: 'endSession',
+        functionName: 'startBookedSession',
         chain: 'rinkeby',
         params: {
           // read this field from an input, use react useState hooks
@@ -28,15 +29,17 @@ function BlockchainFunctionEndSession(props) {
   return (
     <Functions>
       <Fname>{props.name}</Fname>
-      <Label>Only mediator can end session</Label>
+      <Label>Mediators can start a booked session</Label>
       <form>
         <Label>Case ID</Label>
-        <Input type='text' placeholder='Your Case ID..' onChange={event => setCaseId(event.target.value)}/>
-        <Button onClick={() => runContractFunction({ params: endSession })}
-              disabled={isFetching}>End Session</Button>
+        <Input type='text' placeholder='Your Case ID..' onChange={event => setCaseId(event.target.value)} />
+        <Button onClick={() =>
+                runContractFunction({ params: startBookedSession })
+              }
+              disabled={isFetching}>Start a Booked Session</Button>
       </form>
     </Functions>
   );
 }
 
-export default BlockchainFunctionEndSession;
+export default BlockchainFunctionStartABookedSession;

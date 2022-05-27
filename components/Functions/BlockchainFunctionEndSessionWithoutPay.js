@@ -8,16 +8,16 @@ import {
   } from '../../constants/index';
   import { useWeb3Contract, useMoralis } from 'react-moralis';
 
-function BlockchainFunctionEndSession(props) {
+function BlockchainFunctionEndSessionWithoutPay(props) {
     const { data, error, runContractFunction, isFetching, isLoading } =
     useWeb3Contract();
 
     const [caseId, setCaseId] = useState(0);
 
-    const endSession = {
+    const endSessionWithoutPay = {
         abi: MEDIATION_ABI,
         contractAddress: MEDIATION_ADDRESS,
-        functionName: 'endSession',
+        functionName: 'endSessionWithoutPay',
         chain: 'rinkeby',
         params: {
           // read this field from an input, use react useState hooks
@@ -28,15 +28,17 @@ function BlockchainFunctionEndSession(props) {
   return (
     <Functions>
       <Fname>{props.name}</Fname>
-      <Label>Only mediator can end session</Label>
+      <Label>Mediators can end a session without receiving payment in case they mistakenly start a session.</Label>
       <form>
         <Label>Case ID</Label>
         <Input type='text' placeholder='Your Case ID..' onChange={event => setCaseId(event.target.value)}/>
-        <Button onClick={() => runContractFunction({ params: endSession })}
-              disabled={isFetching}>End Session</Button>
+        <Button onClick={() =>
+                runContractFunction({ params: endSessionWithoutPay })
+              }
+              disabled={isFetching}>End Session without pay</Button>
       </form>
     </Functions>
   );
 }
 
-export default BlockchainFunctionEndSession;
+export default BlockchainFunctionEndSessionWithoutPay;
