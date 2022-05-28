@@ -18,7 +18,7 @@ export default function Process() {
   return (
     <ProcessContainer name='process'>
       <ImageContainer>
-        <Image src={line} />
+        <Image src={line} alt='img' />
       </ImageContainer>
       <Title>Our mediation process</Title>
       <ThreeCardsContainer>{cards.splice(0, 3)}</ThreeCardsContainer>
