@@ -39,7 +39,8 @@ function CreateCase() {
               disabled={isFetching}>Create Case</Button>
     </Functions>
     <Functions>
-    <Fname>Show the current case number</Fname>
+      <Fname>Show the current case number</Fname>
+      <Label>IN ORDER TO KNOW WHAT CASE ID TO USE AFTER CREATING A CASE, GET THE CASE NUMBER BELOW.</Label>
       <Button onClick={() => runContractFunction({ params: nextCaseId })} disabled={isFetching}>
       Show current case number</Button>
       {data && <Label>{JSON.stringify(data.toString())}</Label>}
