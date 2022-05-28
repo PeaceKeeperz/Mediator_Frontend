@@ -18,10 +18,10 @@ export default function About() {
     <AboutContainer name='about'>
       <InlineContainer>
         <ImageContainer>
-          <Image src={imge} width='610px' height='460px' />
+          <Image src={imge} alt='img' width='610px' height='460px' />
         </ImageContainer>
         <ParagraphContainer>
-          <Image src={line} width='80px' height='8px' />
+          <Image src={line} alt='img' width='80px' height='8px' />
           <Title>What is Mediation ?</Title>
           <Text>
             {' '}
