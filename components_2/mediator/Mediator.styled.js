@@ -7,19 +7,20 @@ export const Container = styled.div`
   padding-top: 1em;
   padding-bottom: 1em;
   margin: auto;
-  width: 50%;
-
+  
 `;
 
 export const ContainerWrapper = styled.div`
   height: 850px;
   margin: auto;
   overflow: auto;
+  width: 50%;
 `;
 
 export const Functions = styled.div`
   border: white green 2px;
   padding: 1em;
+
 `;
 
 export const Fname = styled.h1`
@@ -29,6 +30,10 @@ export const Fname = styled.h1`
 export const Label = styled.label`
   font-size: 1em;
   color: white;
+`;
+
+export const Overflow = styled.div`
+  overflow: auto;
 `;
 
 export const Button = styled.button`
