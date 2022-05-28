@@ -348,7 +348,7 @@ export const MEDIATOR_ABI=[
     "type": "function"
   }
 ]
-export const MEDIATOR_ADDRESS="0xf63158EC0AE9Ae232C54350EcCF2C5C5FC194470"
+export const MEDIATOR_ADDRESS="0x30089064d80BF0c08834813e8Fe4c6Abc9ca8D1D"
 export const MEDIATION_ABI=[
   {
     "inputs": [
@@ -1195,4 +1195,4 @@ export const MEDIATION_ABI=[
     "type": "receive"
   }
 ]
-export const MEDIATION_ADDRESS="0x36A6A05475a8748F73ad9Fd81447dDE8E760CA77"
+export const MEDIATION_ADDRESS="0x78BcD3E7fc7F980996a82562a5EE1fE7005f74Ba"
