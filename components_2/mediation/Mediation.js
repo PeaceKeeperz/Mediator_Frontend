@@ -1,4 +1,5 @@
 import BlockchainFunction from "../../components/Functions/BlockchainFunc";
+import BlockchainFunctionAcceptPayment from "../../components/Functions/BlockchainFunctionAcceptPayment";
 import BlockchainFunctionAsSecondParty from "../../components/Functions/BlockchainFunctionAsSecondParty";
 import BlockchainFunctionEndSession from "../../components/Functions/BlockchainFunctionEndSession";
 import BlockchainFunctionEndSessionWithoutPay from "../../components/Functions/BlockchainFunctionEndSessionWithoutPay";
@@ -12,7 +13,7 @@ export default function Mediation() {
                 <ContainerWrapper>
                 <Label><strong>MEDIATION SECTION</strong></Label>
                     <BlockchainFunctionStartASession name='Start Session' />
-                    <BlockchainFunctionAsSecondParty name='Accept Payment' />
+                    <BlockchainFunctionAcceptPayment name='Accept Payment' />
                     <BlockchainFunctionEndSession name='End Session' />
                     <BlockchainFunctionEndSessionWithoutPay name='End Session With out Pay' />
                 </ContainerWrapper>

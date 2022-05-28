@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Functions, Fname, Label, Button, Input } from './Functions.styled';
 import {
     MEDIATION_ABI,
