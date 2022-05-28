@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardContainer, Info, Date, Wrapper } from './list.styled';
+import { CardContainer, Info, Date, Wrapper } from './List.styled';
 
 export default function ListCard(props) {
 
